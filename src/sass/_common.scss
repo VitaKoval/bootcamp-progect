@@ -3,37 +3,42 @@
 //  Colors
 
 //  Font
+$font-primery: 'DM Sans',
+sans-serif;
+$font-title: 'Titan One',
+cursive;
 
 //  Cubic for transition
 
 // Break points
 
-// body {
-//     color: ;
-//     background-color: ;
-//     font-family: ;
-//     letter-spacing: ;
-//     line-height: ;
-//     font-size: ;
-// }
+body {
+    // color: ;
+    // background-color: ;
+    font-family: $font-primery;
+    font-weight: 500;
+    font-size: 16px;
+    // letter-spacing: ;
+    // line-height: ;
+}
 
-// img {
-//     display: block;
-// }
+img {
+    display: block;
+}
 
-// Визуально скрыть
-// .visually-hidden {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     border: 0;
-//     padding: 0;
+Визуально скрыть
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-//     white-space: nowrap;
-//     clip-path: inset(100%);
-//     clip: rect(0 0 0 0);
-//     overflow: hidden;}
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
 
 // placeholder
 
