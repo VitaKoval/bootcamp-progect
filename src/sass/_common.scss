@@ -3,43 +3,99 @@
 //  Colors
 
 //  Font
+$font-primery: 'DM Sans',
+sans-serif;
+$font-title: 'Titan One',
+cursive;
 
 //  Cubic for transition
 
 // Break points
 
-// body {
-//     color: ;
-//     background-color: ;
-//     font-family: ;
-//     letter-spacing: ;
-//     line-height: ;
-//     font-size: ;
-// }
+// Base style
+html {
+    box-sizing: border-box;
+}
 
-// img {
-//     display: block;
-// }
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    // color: ;
+    // background-color: ;
+    font-family: $font-primery;
+    font-weight: 500;
+    font-size: 16px;
+    // letter-spacing: ;
+    // line-height: ;
+}
+
 
 // Визуально скрыть
-// .visually-hidden {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     border: 0;
-//     padding: 0;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-//     white-space: nowrap;
-//     clip-path: inset(100%);
-//     clip: rect(0 0 0 0);
-//     overflow: hidden;}
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;}
 
-// placeholder
+// Placeholder
 
 
-// %list {
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-// }
