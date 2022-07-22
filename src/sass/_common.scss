@@ -1,6 +1,22 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 //  Colors
+$header-bg: #FFB8CA;
+$text-white: #ffffff;
+$text-primary: #D41443;
+$text-strong: #FFA5BA;
+$text-p-primary: #000000;
+$text-p-secont: #907E82;
+$bg-cofe: #F0D1A5;
+$color-olive: #C2E297;
+$bg-about: #FFF5F6;
+$bg-button: #D41342;
+
+$point: #C7133E;
+$bg-icon: #FEA5BB;
+$bg-point: #D9D9D9;
+$bg-customer: #FAFAFA;
+
 
 //  Font
 $font-primery: 'DM Sans',
@@ -81,8 +97,8 @@ body {
     // line-height: ;
 }
 
+// placeholder
 
-// Визуально скрыть
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -97,5 +113,6 @@ body {
     overflow: hidden;}
 
 // Placeholder
+
 
 
