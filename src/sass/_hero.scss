@@ -7,7 +7,7 @@
         margin: 0 0 20px 0;
         max-width: 218px;
         font-family: $font-title;
-        color: #fff;
+        color: $text-white;
         font-weight: 400;
         letter-spacing: 0.04;
         text-transform: uppercase;
@@ -16,7 +16,7 @@
         span {
             font-size: 48px;
             line-height: 96%;
-            color: #D41443;
+            color: $text-primary;
         }
     }
 
@@ -52,8 +52,8 @@
     border-radius: 20px;
     border: none;
                     
-    // background-color: #fff;
-    // color: #D41443;
+    background-color: #fff;
+    color: #D41443;
 }
 
 
@@ -63,3 +63,4 @@
 //         rgba(255, 184, 202, 1),
 //         rgba(255, 184, 202, 1)
 //     )
+

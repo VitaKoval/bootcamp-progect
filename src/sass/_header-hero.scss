@@ -27,9 +27,18 @@
 }
 
 
+.menu__btn {
+    z-index: 100;
+    position: fixed;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+    transition: fill $timing-function;
 
-// временные
-
-.logo__img {
-    width: 40px;
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
