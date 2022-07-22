@@ -1,0 +1,66 @@
+.hero {
+    padding: 194px 15px 0 15px;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+    &__title {
+        margin: 0 0 20px 0;
+        max-width: 218px;
+        font-family: $font-title;
+        color: $text-white;
+        font-weight: 400;
+        letter-spacing: 0.04;
+        text-transform: uppercase;
+        line-height: 30px;
+        font-size: 26px;
+        span {
+            font-size: 48px;
+            line-height: 96%;
+            color: $text-primary;
+        }
+    }
+
+    &__right--bar {
+        display: none;
+    }
+}
+
+.overlay {
+    background-color: rgb(255, 184, 202);
+    background-image: url("../image/desctop/iceCreaneBg.png");
+
+    background-size: 360px;
+    background-repeat: no-repeat;
+    background-position: bottom 0 right -70px;
+    bottom: 0;
+}
+
+.milk {
+    display: none;
+}
+
+// btns
+.btn {
+    padding: 0 12px;
+    max-width: 200px;
+    min-height: 24px;
+
+    font-family: $font-primery;
+    font-size: 8px;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    border-radius: 20px;
+    border: none;
+                    
+    background-color: #fff;
+    color: #D41443;
+}
+
+
+
+// linear-gradient(
+//         to right,
+//         rgba(255, 184, 202, 1),
+//         rgba(255, 184, 202, 1)
+//     )
+

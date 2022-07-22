@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    transform: translate(-50%);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100vw;
+        padding: 0 16px 0 16px;
+    }
+
+    &----wrapper {
+        display: flex;
+    }
+
+    &__btn {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: none;
+}
+
+
+.menu__btn {
+    z-index: 100;
+    position: fixed;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    
+    transition: fill $timing-function;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
