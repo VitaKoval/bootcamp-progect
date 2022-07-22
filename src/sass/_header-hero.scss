@@ -1,0 +1,35 @@
+.header {
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    transform: translate(-50%);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100vw;
+        padding: 0 16px 0 16px;
+    }
+
+    &----wrapper {
+        display: flex;
+    }
+
+    &__btn {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: none;
+}
+
+
+
+// временные
+
+.logo__img {
+    width: 40px;
+}
