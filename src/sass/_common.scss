@@ -1,30 +1,25 @@
 // @import '~node_modules/modern-normalize/modern-normalize.css';
 
-
-
 //  Colors
-$header-bg: #FFB8CA;
+$header-bg: #ffb8ca;
 $text-white: #ffffff;
-$text-primary: #D41443;
-$text-strong: #FFA5BA;
+$text-primary: #d41443;
+$text-strong: #ffa5ba;
 $text-p-primary: #000000;
-$text-p-secont: #907E82;
-$bg-cofe: #F0D1A5;
-$color-olive: #C2E297;
-$bg-about: #FFF5F6;
-$bg-button: #D41342;
+$text-p-secont: #907e82;
+$bg-cofe: #f0d1a5;
+$color-olive: #c2e297;
+$bg-about: #fff5f6;
+$bg-button: #d41342;
 
-$point: #C7133E;
-$bg-icon: #FEA5BB;
-$bg-point: #D9D9D9;
-$bg-customer: #FAFAFA;
-
+$point: #c7133e;
+$bg-icon: #fea5bb;
+$bg-point: #d9d9d9;
+$bg-customer: #fafafa;
 
 //  Font
-$font-primery: 'DM Sans',
-sans-serif;
-$font-title: 'Titan One',
-cursive;
+$font-primery: 'DM Sans', sans-serif;
+$font-title: 'Titan One', cursive;
 
 //  Cubic for transition
 
@@ -32,18 +27,18 @@ cursive;
 
 // Base style
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 ul,
 ol {
-    padding: 0;
+  padding: 0;
 }
 
 body,
@@ -62,59 +57,76 @@ figcaption,
 blockquote,
 dl,
 dd {
-    margin: 0;
+  margin: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    // color: ;
-    // background-color: ;
-    font-family: $font-primery;
-    font-weight: 500;
-    font-size: 16px;
-    // letter-spacing: ;
-    // line-height: ;
+  // color: ;
+  // background-color: ;
+  font-family: $font-primery;
+  font-weight: 500;
+  font-size: 16px;
+  // letter-spacing: ;
+  // line-height: ;
 }
 
-// placeholder
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+
+  &--no-padding {
+    padding: 0;
+  }
+}
+
+.btn {
+  padding: 0 12px;
+  max-width: 200px;
+  min-height: 24px;
+
+  font-family: $font-primery;
+  font-size: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  border-radius: 20px;
+  border: none;
+}
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;}
-
-// Placeholder
-
-
-
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
