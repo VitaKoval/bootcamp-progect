@@ -12,6 +12,65 @@ cursive;
 
 // Break points
 
+// Base style
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     // color: ;
     // background-color: ;
@@ -22,11 +81,8 @@ body {
     // line-height: ;
 }
 
-img {
-    display: block;
-}
 
-Визуально скрыть
+// Визуально скрыть
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -40,11 +96,6 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;}
 
-// placeholder
+// Placeholder
 
 
-// %list {
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-// }
