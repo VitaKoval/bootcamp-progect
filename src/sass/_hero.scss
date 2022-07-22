@@ -1,11 +1,12 @@
 .hero {
-    padding: 194px 15px 0 15px;
-    height: 100vh;
+    padding: 194px 0 0 0;
+    height: 502px;
     background-repeat: no-repeat;
 
     &__title {
         margin: 0 0 20px 0;
         max-width: 218px;
+        
         font-family: $font-title;
         color: $text-white;
         font-weight: 400;
