@@ -6,8 +6,12 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 60px;
-    padding-bottom: 64px;
+    padding-bottom: 247px;
     padding-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+    padding-bottom: 209px;
   }
 }
 
@@ -19,11 +23,24 @@
   padding-right: 20px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+
+    padding-left: 16px;
   }
 }
 
 .advantages__list {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -43,6 +60,14 @@
 
 .advantages__vector {
   width: 100%;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__subtitle {
@@ -63,6 +88,16 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 48px;
     line-height: 1.46;
+
+    margin-bottom: 13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    text-align: right;
+
+    margin-bottom: 16px;
   }
 }
 
@@ -80,5 +115,11 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
     line-height: 1.74;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+
+    letter-spacing: 0.02em;
   }
 }
