@@ -1,14 +1,31 @@
 <section class="gallery">
   <div class="container container--no-padding">
-    <img
-      class="gallery__image"
-      srcset="
-        ./image/mobile/mobile-group.png   1x,
-        ./image/mobile/mobile-group2x.png 2x
-      "
-      src="./image/mobile/mobile-group.png"
-      alt="Галерея с фото продукции"
-      width="320"
-    />
+    <picture>
+      <source
+        srcset="./image/desctop/group.png 1x, ./image/desctop/group2x.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./image/tablet/tablet-group.png   1x,
+          ./image/tablet/tablet-group2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./image/mobile/mobile-group.png   1x,
+          ./image/mobile/mobile-group2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+
+      <img
+        class="gallery__image"
+        src="./image/mobile/mobile-group.png"
+        alt="Галерея с фото продукции"
+        width="320"
+      />
+    </picture>
   </div>
 </section>
