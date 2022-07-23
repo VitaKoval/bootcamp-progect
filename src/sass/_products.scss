@@ -1,6 +1,6 @@
-.container {
-    display: block;
-}
+// .container {
+//     display: block;
+// }
 
 .porducts__strong {
     display: block;
@@ -17,6 +17,16 @@
     margin-top: 60px;
 
     color: $text-strong;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            line-height: 34px;
+        }
 }
 
 .porducts__title {
@@ -32,8 +42,30 @@
     text-transform: uppercase;
 
     color: $text-primary;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 55px;
+    }
+        @media screen and (min-width: 1200px){
+            font-size: 58px;
+            line-height: 66px;
+            margin-bottom: 20px;
+        }
+
 }
 
+.porducts__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin: -8px;
+    }
+
+        @media screen and (min-width: 1200px){
+            
+            margin: -16px;
+        }
+}
 
 .porducts__item {
     position: relative;
@@ -41,10 +73,32 @@
     margin-right: auto;
 
     width: 280px;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 48px)/3);
+        margin: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 96px)/3);
+        margin: 16px;
+    }
 }
+
+
 
 .porducts__image {
     margin-bottom: -50%;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: -86px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        margin-bottom: -133px;
+
+    }
 }
 
 .porducts-box {
@@ -62,7 +116,13 @@
     &__milkshakes {
         background: $color-olive;
     }
+        @media screen and (min-width: 768px) {
+            padding: 118px 0 40px 0;
+        }
+                @media screen and (min-width: 1200px){
+                    padding: 165px 0 60px 0;
 
+                }
 }
 
 .porducts-box__title {
@@ -80,6 +140,15 @@
     
     margin-top: 20px;
     margin-bottom: 0;
+
+    @media screen and (min-width: 768px){
+        margin-top: 0;
+    }
+        @media screen and (min-width: 1200px){
+            font-size: 30px;
+            margin-top: 0; 
+        }
+        
 }
 .porducts-box__icon {
     display: flex;
@@ -101,6 +170,17 @@
     color: $text-white;
 
     margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        line-height: 1.76;
+        width: 160px;
+    }
+        @media screen and (min-width: 1200px){
+            font-size: 16px;
+            line-height: 1.76;
+            width: 245px;
+        }
+
 }
 
 .products-button{
@@ -113,6 +193,10 @@
     margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 60px;
+    }
 }
 
 
