@@ -102,6 +102,18 @@ body {
   &--no-padding {
     padding: 0;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+
+    padding-left: 0 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+
+    padding: 0 16px;
+  }
 }
 
 .btn {
