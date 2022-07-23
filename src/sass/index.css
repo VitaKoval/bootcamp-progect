@@ -63,10 +63,18 @@ body {
 }
 
 .container {
+<<<<<<< HEAD
   width: 320px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
 }
+=======
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+>>>>>>> 2653df09bc302027a68fc21d9aa7acdcf7444a49
 .container--no-padding {
   padding: 0;
 }
@@ -97,11 +105,72 @@ body {
   overflow: hidden;
 }
 
+.hero {
+  padding: 194px 0 0 0;
+  height: 502px;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  margin: 0 0 20px 0;
+  max-width: 218px;
+  font-family: "Titan One", cursive;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 0.04;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 26px;
+}
+
+.hero__title span {
+  font-size: 48px;
+  line-height: 96%;
+  color: #d41443;
+}
+
+.hero__right--bar {
+  display: none;
+}
+
+.overlay {
+  background-color: #ffb8ca;
+  background-image: url("../image/desctop/iceCreaneBg.png");
+  background-size: 360px;
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -70px;
+  bottom: 0;
+}
+
+.milk {
+  display: none;
+}
+
+.btn {
+  padding: 0 12px;
+  max-width: 200px;
+  min-height: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  color: #D41443;
+}
+
 .header {
   position: absolute;
   left: 50%;
+<<<<<<< HEAD
   top: 36px;
   transform: translate(-50%);
+=======
+  top: 8px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+>>>>>>> 2653df09bc302027a68fc21d9aa7acdcf7444a49
 }
 .header__inner {
   display: flex;
@@ -122,9 +191,9 @@ body {
 }
 
 .menu__btn {
-  z-index: 100;
-  position: fixed;
-  right: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -137,6 +206,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 .hero {
   padding: 194px 15px 0 15px;
   height: 100vh;
@@ -169,24 +239,28 @@ body {
   background-repeat: no-repeat;
   background-position: bottom 0 right -70px;
   bottom: 0;
-}
-
-.milk {
+=======
+.menu__btn .menu__icon--close {
   display: none;
 }
 
-.btn {
-  padding: 0 12px;
-  max-width: 200px;
-  min-height: 24px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 8px;
-  line-height: 1.2;
-  letter-spacing: 0.06em;
-  border-radius: 20px;
-  border: none;
-  background-color: #fff;
-  color: #D41443;
+.menu__btn.is-open .menu__icon--close {
+  display: block;
+>>>>>>> 2653df09bc302027a68fc21d9aa7acdcf7444a49
+}
+
+.menu__btn.is-open .menu__icon--open {
+  display: none;
+}
+
+.menu__btn:hover,
+.menu__btn:focus {
+  cursor: pointer;
+}
+
+.gallery {
+  width: 320px;
+  background-image: repeating-linear-gradient(to bottom, #ffffff 27px, #fff5f6 293px);
 }
 
 .advantages {
