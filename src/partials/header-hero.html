@@ -1,11 +1,10 @@
 <header class="header">
-    <div class="header__inner container">        
+    <div class="header__inner container">
+        <!-- logo -->
         <a 
             href="#" 
             class="logo"
             aria-expanded="false"
-
-            data-menu-button
         >
             <svg
                 width="199"
@@ -35,7 +34,7 @@
                 </li>
             </ul>
         </nav>
-
+        
         <button 
             class="menu menu__btn"
             aria-expanded="false"
@@ -43,11 +42,37 @@
             type="button" 
             data-menu-button
         >
-            <svg width="20">
-                <use href="./image/sprite-svg.svg#Burger"></use>
-                <use href="./image/sprite-svg.svg#"></use>
+            <svg 
+                width="20" 
+                height="20"
+                aria-label="Переключатель мобильного меню"
+            >
+                <use class="menu__icon--close" href="./image/sprite-svg.svg#close"></use>
+                <use class="menu__icon--open" href="./image/sprite-svg.svg#Burger"></use>
             </svg>
         </button>
+
+        <div 
+            class="menu__container" 
+            id="menu-container"
+            data-menu
+        >
+            <ul class="nav nav__list list">
+                <button class="btn__primary header__btn btn" type="button">Buy now</button>
+                <li class="nav__item link">
+                    <button class="btn__primary header__btn btn" type="button">Buy now</button>
+                </li>
+                <li class="nav__item link">
+                    <a class="nav__link active" href="#" aria-label="Home page link">Home</a> 
+                </li>
+                <li class="nav__item link">
+                    <!-- <a class="nav__link" href="./portfolio.html" aria-label="portfolio page link">Портфолио</a>  -->
+                </li>
+                <li class="nav__item link">
+                    <!-- <a class="nav__link" href="#" aria-label="contacts page link">Контакты</a>  -->
+                </li>
+            </ul>
+        </div>
 
         <button class="btn__primary header__btn btn" type="button">Buy now</button>
     </div>
