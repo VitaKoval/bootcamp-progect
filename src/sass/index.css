@@ -276,10 +276,13 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 60px;
   color: #ffa5ba;
 }
 
 .porducts__title {
+  margin-top: 15px;
+  margin-bottom: 8px;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -298,12 +301,23 @@ body {
   width: 280px;
 }
 
+.porducts__image {
+  margin-bottom: -50%;
+}
+
 .porducts-box {
   display: block;
-  padding: 140px 0 0 0;
-  background: #ffb8ca;
+  padding: 140px 0 32px 0;
   border-radius: 24px;
-  margin-bottom: 30px;
+}
+.porducts-box__cream {
+  background: #ffb8ca;
+}
+.porducts-box__cofe {
+  background: #f0d1a5;
+}
+.porducts-box__milkshakes {
+  background: #c2e297;
 }
 
 .porducts-box__title {
@@ -321,6 +335,7 @@ body {
 }
 
 .porducts-box__icon {
+  display: flex;
   margin: 32px auto;
 }
 
@@ -335,6 +350,18 @@ body {
   margin-bottom: 32px;
   color: #ffffff;
   margin: 0 auto;
+}
+
+.products-button {
+  display: flex;
+  border-radius: 50%;
+  background: #ffffff;
+  fill: #d41443;
+  border: none;
+  padding: 15px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages {
@@ -460,7 +487,7 @@ body {
 
 .gallery {
   min-width: 320px;
-  background-image: repeating-linear-gradient(to bottom, #ffffff 27px, #fff5f6 293px);
+  background-image: repeating-linear-gradient(to bottom, #fff5f6, #ffffff);
 }
 
 .gallery__image {
