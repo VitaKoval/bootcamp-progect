@@ -1,9 +1,10 @@
 .gallery {
   min-width: 320px;
-  background-image: repeating-linear-gradient(
+  min-height: 136px;
+  background-image: linear-gradient(
     to bottom,
-    $bg-about,
-    $text-white
+    $bg-about 20%,
+    $text-white 20%
   );
 }
 
