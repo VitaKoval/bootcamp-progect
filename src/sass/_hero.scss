@@ -1,7 +1,50 @@
+
+.overlay {
+    background-color: rgb(255, 184, 202);
+    background-image: url("../image/desctop/iceCreaneBg.png");
+
+    background-size: 360px;
+    background-repeat: no-repeat;
+    background-position: bottom 0 right -70px;
+    bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        background-color: rgb(255, 184, 202);
+        background-image: url("../image/tablet/tablet-ice.png");
+
+        background-repeat: no-repeat;
+        background-position: bottom 0 right 45%;
+        bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-color: rgb(255, 184, 202);
+        background-image: url("../image/desctop/iceCreaneBg.png");
+
+        background-size: 534px;
+        background-position: bottom 0 right 37%;
+        bottom: 0;
+    }
+}
+
 .hero {
+    margin: -66px 0 0 0;
     padding: 194px 0 0 0;
     height: 502px;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+        margin: -114px 0 0;
+        height: 100%;
+        padding: 102px 0 15px 0;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: -124px 0 0;
+        padding: 174px 0 60px 0;
+
+    }
 
     &__title {
         margin: 0 0 20px 0;
@@ -19,25 +62,150 @@
             line-height: 96%;
             color: $text-primary;
         }
+
+        @media screen and (min-width: 768px) {
+            max-width:162px;
+            font-size: 22px;
+            span {
+                font-size: 34px;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            max-width:227px;
+            margin: 0 0 24px 0;
+            font-size: 38px;
+            span {
+                font-size: 58px;
+            }
+        }
     }
 
     &__right--bar {
         display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__right--count {
+        position: relative;
+        z-index: 1;
+        font-family: $font-title;
+        font-size: 28px;
+
+        color: $text-primary;
+
+        &:not(:last-child) {
+            margin: 0 0 18px 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 46px;
+        }
+    }
+
+    &__btn--wrapper {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            margin: 0 0 20px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin: 0 0 40px;
+        }
+    }
+}
+.cafes::before,
+.trucks::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -6;
+    top: -3;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    @media screen and (min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+        right: -13;
+        top: -5;
     }
 }
 
-.overlay {
-    background-color: rgb(255, 184, 202);
-    background-image: url("../image/desctop/iceCreaneBg.png");
+.cafes::after {
+    content: "cafes";
+    display: flex;
+    justify-content: end;
 
-    background-size: 360px;
-    background-repeat: no-repeat;
-    background-position: bottom 0 right -70px;
-    bottom: 0;
+    font-family: $font-primery;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+}
+
+.trucks::after {
+    content: "food trucks";
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 43px;
+
+    font-family: $font-primery;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        width: 74px;
+
+    }
+}
+
+.hero--wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 .milk {
     display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        &__img {
+            width: 154px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &__img {
+            width: 213px;
+        }
+    }
+   
+    &__descr {
+        margin: 0 0 7px 0;
+
+        max-width: 114px;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $text-white;
+
+        @media screen and (min-width: 1200px) {
+            margin: 0 0 20px 0;
+            font-size: 14px;
+            max-width: 200px;
+        }
+    }
 }
 
 // btns
@@ -47,21 +215,100 @@
     min-height: 24px;
 
     font-family: $font-primery;
-    font-size: 8px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
     letter-spacing: 0.06em;
-    border-radius: 20px;
+    border-radius: 22px;
     border: none;
                     
     background-color: #fff;
     color: #D41443;
 }
 
+.learnMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    fill: $text-primary;
+    transition: box-shadow $timing-function;
 
 
-// linear-gradient(
-//         to right,
-//         rgba(255, 184, 202, 1),
-//         rgba(255, 184, 202, 1)
-//     )
+    @media screen and (min-width: 1200px) {
+        width: 26px;
+        height: 26px;
+    }
+    .arrow__svg {
+        width: 8px;
+        height: 8px;
+        transition: width $timing-function, height $timing-function;
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+    }
+    &:hover .arrow__svg,
+    &:focus .arrow__svg {
+        width: 10px;
+        height: 10px;
+        rotate: 360deg;
+    }
+}
+
+.header__btn {
+    
+    @media screen and (min-width: 768px) {
+        border: block;
+    }
+}
+
+.btn__acent {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.2;
+    height: 24px;
+    min-width: 82px;
+    transition: box-shadow $timing-function;
+    @media screen and (min-width: 1200px) {
+        height: 40px;
+        font-size: 14px;
+        padding: 0 18px;
+        font-weight: 400;
+    }
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+    }
+}
+
+.btn__primary {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.2;
+    height: 24px;
+    background-color: $text-primary;
+    color: $text-white;
+    transition: box-shadow $timing-function;
+
+
+    @media screen and (min-width: 1200px) {
+        height: 40px;
+        font-size: 14px;
+        padding: 0 18px;
+        font-weight: 400;
+        margin: 0 12px 0 0;
+    }
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+    }
+}
 

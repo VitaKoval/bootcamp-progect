@@ -1,79 +1,68 @@
 <header class="header">
-    <div class="header__inner container">
-        <!-- logo -->
-        <a 
-            href="#" 
-            class="logo"
-            aria-expanded="false"
-        >
-            <svg
-                width="199"
-                height="50"
-                aria-label="logo"
+    <div class="header__wrapper">
+        <div class="header__inner container">
+            <!-- logo -->
+            <a 
+                href="#" 
+                class="logo"
+                aria-expanded="false"
             >
-                <use class="logo__svg" href="./image/sprite-svg.svg#logo"></use>
-            </svg>
-        </a>
-
-        <nav class="nav">
-            <ul class="nav__list list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">About us</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">How it's made</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Our products</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <button 
-            class="menu menu__btn"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            type="button" 
-            data-menu-button
-        >
-            <svg 
-                width="20" 
-                height="20"
-                aria-label="Переключатель мобильного меню"
+                <svg
+                    class="logo__svg"
+                    width="199"
+                    height="50"
+                    aria-label="logo"
+                >
+                    <use href="./image/sprite-svg.svg#logo"></use>
+                </svg>
+            </a>
+    
+            <div class="btn-wrapper">
+                <button 
+                class="menu menu__btn"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                type="button" 
+                data-menu-button
             >
-                <use class="menu__icon--close" href="./image/sprite-svg.svg#close"></use>
-                <use class="menu__icon--open" href="./image/sprite-svg.svg#Burger"></use>
-            </svg>
-        </button>
+                <svg 
+                    width="20" 
+                    height="20"
+                    aria-label="Переключатель мобильного меню"
+                >
+                    <use class="menu__icon--close" href="./image/sprite-svg.svg#close"></use>
+                    <use class="menu__icon--open" href="./image/sprite-svg.svg#Burger"></use>
+                </svg>
+            </button>
+            <button class="btn__acent btn__white header__btn btn btn__hide" type="button">Buy now</button>
 
-        <div 
-            class="menu__container" 
-            id="menu-container"
-            data-menu
-        >
-            <ul class="nav nav__list list">
-                <button class="btn__primary header__btn btn" type="button">Buy now</button>
-                <li class="nav__item link">
-                    <button class="btn__primary header__btn btn" type="button">Buy now</button>
-                </li>
-                <li class="nav__item link">
-                    <a class="nav__link active" href="#" aria-label="Home page link">Home</a> 
-                </li>
-                <li class="nav__item link">
-                    <!-- <a class="nav__link" href="./portfolio.html" aria-label="portfolio page link">Портфолио</a>  -->
-                </li>
-                <li class="nav__item link">
-                    <!-- <a class="nav__link" href="#" aria-label="contacts page link">Контакты</a>  -->
-                </li>
-            </ul>
+            </div>
+    
+            <div 
+                class="menu__container" 
+                id="menu-container"
+                data-menu
+            >
+                <ul class="nav nav__list--menu list">
+                        <button class="btn btn__white btn__margin" type="button">Buy now</button>
+                    <li class="nav__item link">
+                        <a class="nav__link active" href="#" aria-label="Home page link">Home</a> 
+                    </li>
+                    <li class="nav__item link">
+                        <a class="nav__link" href="#" aria-label="Home page link">About us</a> 
+                    </li>
+                    <li class="nav__item link">
+                        <a class="nav__link" href="#" aria-label="Home page link">How it's made</a> 
+                    </li>
+                    <li class="nav__item link">
+                        <a class="nav__link" href="#" aria-label="Home page link">Our products</a> 
+                    </li>
+                    <li class="nav__item link">
+                        <a class="nav__link" href="#" aria-label="Home page link">Contacts</a> 
+                    </li>
+                </ul>
+            </div>
+    
         </div>
-
-        <button class="btn__primary header__btn btn" type="button">Buy now</button>
     </div>
 </header>
