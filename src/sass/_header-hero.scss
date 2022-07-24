@@ -64,6 +64,19 @@
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
     }
 }
+.btn--hover{
+    transition: background-color $timing-function;
+}
+.btn--hover:hover,
+.btn--hover:focus {
+    background-color: #ECEBEB;
+
+}
+
+// .btn--hover .btn__white:hover,
+// .btn--hover .btn__white:focus {
+//     background-color: #ECEBEB;
+// }
 
 .btn__hide {
     display: none;
@@ -166,7 +179,9 @@
     @media screen and (min-width: 1200px) {
         display: flex;
     }
+    
 }
+
 
 .nav__list--menu .btn__white {
     @media screen and (min-width: 1200px) {
