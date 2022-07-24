@@ -1,13 +1,56 @@
 <section class="section about">
-    <div class="container">
-        <strong class="about__strong">tradition and love </strong>
-        <h1 class="about__title">how it’s made?</h1>
-    <div class="about__fon">
-        <!-- <img src="" alt="cow"> -->
-        <p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
-        <p class="about__cubtext">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. 
-            Aliquam erat volutpat. Aenean accumsan.</p>
-            <button data-modal-open type="button" class="about_button">Read more</button>
+  <div class="container">
+    <h2 class="about__subtitle">tradition and love</h2>
+    <h1 class="about__title">how it’s made?</h1>
+    <div class="about__box">
+      <div class="about__block">
+        <picture>
+          <source
+            srcset="
+              ./image/desctop/cowjug.png   1x,
+              ./image/desctop/cowjug2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./image/tablet/tablet-cowjug.png   1x,
+              ./image/tablet/tablet-cowjug2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./image/mobile/mobile-cowjug.png   1x,
+              ./image/mobile/mobile-cowjug2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="about__image"
+            src="./image/mobile/mobile-cowjug.png"
+            alt="jug of milk and a cow"
+          />
+        </picture>
+      </div>
+      <div class="about__fon">
+        <p class="about__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <div class="about__overlay"></div>
+        <p class="about__subtext">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt. Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button data-modal-open type="button" class="btn__white btn__about">
+          Read more
+        </button>
+      </div>
     </div>
-    </div>
+  </div>
 </section>
