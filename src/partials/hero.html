@@ -4,23 +4,32 @@
             <h1 class="hero__title">ice cream made with 
                 <span>passion</span>
             </h1>
-            <button class="btn__primary btn" type="button">Products</button>
-            <button class="btn__acent btn" type="button">How it's made?</button>
-    
+            <div class="hero__btn--wrapper">
+                <button class="btn__primary btn" type="button">Products</button>
+                <button class="btn__acent btn" type="button">How it's made?</button>
+            </div>
+            
             <div class="milk">
-                <!-- <img src="" alt="image"> -->
+                <img src="./image/tablet/tablet-milkjug.png" width="154" alt="milkjug">
                 <div class="more">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorum eius ducimus facere nam?</p>
-                    <button class="learnMore btn" type="button">
-                        arr
+                    <p class="milk__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button class="learnMore" type="button">
+                        <svg 
+                            class="arrow__svg"
+                            width="8"
+                            height="8"
+                            aria-label="logo"
+                        >
+                            <use href="./image/sprite-svg.svg#arrow-right2"></use>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
     
         <div class="hero__right--bar">
-            <p>16</p>
-            <p>23</p>
+            <p class="hero__right--count cafes">16</p>
+            <p class="hero__right--count trucks">23</p>
         </div>
     </div>
 </section>
