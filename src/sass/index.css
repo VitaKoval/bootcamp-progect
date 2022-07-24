@@ -139,9 +139,9 @@ body {
 @media screen and (min-width: 768px) {
   .overlay {
     background-color: #ffb8ca;
-    background-image: url("../image/tablet/tablet-ice.png");
-    background-repeat: no-repeat;
-    background-position: bottom 0 right 45%;
+    background-image: url("../image/desctop/headergirl.png"), url("../image/tablet/tablet-ice.png");
+    background-size: 190px, 360px;
+    background-position: bottom 0 right 8%,bottom 0 right 45%;
     bottom: 0;
   }
 }
@@ -149,9 +149,9 @@ body {
 @media screen and (min-width: 1200px) {
   .overlay {
     background-color: #ffb8ca;
-    background-image: url("../image/desctop/iceCreaneBg.png");
-    background-size: 534px;
-    background-position: bottom 0 right 37%;
+    background-image: url("../image/desctop/headergirl.png"), url("../image/desctop/iceCreaneBg.png");
+    background-size: 304px, 534px;
+    background-position: bottom 0 right 12%, bottom 0 right 37%;
     bottom: 0;
   }
 }
@@ -1183,7 +1183,7 @@ body {
 }
 
 .btn__about {
-  display: block;
+  padding: 0 37px;
 }
 
 .advantages {
