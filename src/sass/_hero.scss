@@ -21,7 +21,7 @@
         background-color: rgb(255, 184, 202);
         background-image: url("../image/desctop/iceCreaneBg.png");
 
-        background-size: 435px;
+        background-size: 534px;
         background-position: bottom 0 right 37%;
         bottom: 0;
     }
@@ -42,7 +42,7 @@
 
     @media screen and (min-width: 1200px) {
         margin: -124px 0 0;
-        padding: 147px 0 60px 0;
+        padding: 174px 0 60px 0;
 
     }
 
@@ -61,8 +61,6 @@
             font-size: 48px;
             line-height: 96%;
             color: $text-primary;
-            
-            
         }
 
         @media screen and (min-width: 768px) {
@@ -179,10 +177,20 @@
 
 .milk {
     display: none;
+
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
+        &__img {
+            width: 154px;
+        }
     }
+    @media screen and (min-width: 1200px) {
+        &__img {
+            width: 213px;
+        }
+    }
+   
     &__descr {
         margin: 0 0 7px 0;
 
@@ -271,7 +279,7 @@
         height: 40px;
         font-size: 14px;
         padding: 0 18px;
-        font-weight: 700;
+        font-weight: 400;
     }
     &:hover,
     &:focus {
@@ -294,7 +302,8 @@
         height: 40px;
         font-size: 14px;
         padding: 0 18px;
-        font-weight: 700;
+        font-weight: 400;
+        margin: 0 12px 0 0;
     }
     &:hover,
     &:focus {
