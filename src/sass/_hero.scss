@@ -3,6 +3,7 @@
     background-color: rgb(255, 184, 202);
     background-image: url("../image/desctop/iceCreaneBg.png");
 
+
     background-size: 360px;
     background-repeat: no-repeat;
     background-position: bottom 0 right -70px;
@@ -10,19 +11,19 @@
 
     @media screen and (min-width: 768px) {
         background-color: rgb(255, 184, 202);
-        background-image: url("../image/tablet/tablet-ice.png");
+        background-image: url("../image/desctop/headergirl.png"), url("../image/tablet/tablet-ice.png");
 
-        background-repeat: no-repeat;
-        background-position: bottom 0 right 45%;
+        background-size: 190px, 360px;
+        background-position: bottom 0 right 18%,bottom 0 right 45%;
         bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
         background-color: rgb(255, 184, 202);
-        background-image: url("../image/desctop/iceCreaneBg.png");
+        background-image: url("../image/desctop/headergirl.png"), url("../image/desctop/iceCreaneBg.png");
 
-        background-size: 534px;
-        background-position: bottom 0 right 37%;
+        background-size: 304px, 534px;
+        background-position: bottom 0 right 12%, bottom 0 right 37%;
         bottom: 0;
     }
 }
@@ -262,7 +263,6 @@
 }
 
 .header__btn {
-    
     @media screen and (min-width: 768px) {
         border: block;
     }
