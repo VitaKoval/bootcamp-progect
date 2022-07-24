@@ -4,11 +4,35 @@
     <h1 class="about__title">how it’s made?</h1>
     <div class="about__box">
       <div class="about__block">
-        <img
-          class="about__image"
-          src="./image/mobile/mobile-cowjug.png"
-          alt="jug of milk and a cow"
-        />
+        <picture>
+          <source
+            srcset="
+              ./image/desctop/cowjug.png   1x,
+              ./image/desctop/cowjug2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./image/tablet/tablet-cowjug.png   1x,
+              ./image/tablet/tablet-cowjug2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./image/mobile/mobile-cowjug.png   1x,
+              ./image/mobile/mobile-cowjug2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="about__image"
+            src="./image/mobile/mobile-cowjug.png"
+            alt="jug of milk and a cow"
+          />
+        </picture>
       </div>
       <div class="about__fon">
         <p class="about__text">
