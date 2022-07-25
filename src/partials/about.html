@@ -1,35 +1,67 @@
-
-<section class="section about" id="about">
-  <div class="container">
 <section class="section about">
-  <div class="container container--no-padding">
-    <h2 class="about__subtitle">tradition and love</h2>
-    <h1 class="about__title">how it’s made?</h1>
-    <div class="about__box">
-      <div class="about__block">
-        <picture>
-          <source
-            srcset="
-              ./image/desctop/cowjug.png   1x,
-              ./image/desctop/cowjug2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./image/tablet/tablet-cowjug.png   1x,
-              ./image/tablet/tablet-cowjug2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./image/mobile/mobile-cowjug.png   1x,
-              ./image/mobile/mobile-cowjug2x.png 2x
-            "
-            media="(max-width: 767px)"
-          />
+  <div class="about__overlay">
+    <div class="container">
+      <p class="about__subtitle">tradition and love</p>
+      <h2 class="about__title">how it’s made?</h2>
+      <div class="about__box">
+        <div class="about__block">
+          <picture>
+            <source
+              srcset="
+                ./image/desctop/cowjug.png   1x,
+                ./image/desctop/cowjug2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./image/tablet/tablet-cowjug.png   1x,
+                ./image/tablet/tablet-cowjug2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./image/mobile/mobile-cowjug.png   1x,
+                ./image/mobile/mobile-cowjug2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
 
+<<<<<<< Updated upstream
+            <img
+              class="about__image"
+              src="./image/mobile/mobile-cowjug.png"
+              alt="jug of milk and a cow"
+              width="501"
+            />
+          </picture>
+        </div>
+        <div class="about__fon">
+          <p class="about__text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </p>
+
+          <p class="about__subtext">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.
+          </p>
+
+          <p class="about__subtext">Aliquam erat volutpat. Aenean accumsan.</p>
+          <!-- <div class="about__overlay"></div> -->
+          <button
+            class="btn__white btn__about btn btn--hover"
+            data-modal-open
+            type="button"
+          >
+            Read more
+          </button>
+        </div>
+=======
           <img
             class="about__image"
             src="./image/mobile/mobile-cowjug.png"
@@ -51,13 +83,38 @@
           tincidunt.
         </p>
         <p class="about__subtext">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button class="btn__white btn__about btn" data-modal-open type="button">
+        <button class="btn__white btn__about btn" type="button">
         <button 
           class="btn__white btn__about btn btn--hover"
-          data-modal-open 
-          type="button" >
+          type="button" 
+          data-about-open
+        >
           Read more
         </button>
+
+        <!-- modal -->
+        <div 
+          class="backdrop 
+          is-hidden" 
+          data-about
+        >
+          <form class="form js-speaker-form">
+
+              <b class="form__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam quae sunt cumque asperiores illo quod optio, vitae non excepturi nihil tenetur eius impedit accusantium saepe quidem, iure possimus molestiae suscipit, ea minus? Sequi ipsam perferendis magni repellat aut quod?</b>
+
+              <button 
+                  class="form__btn--close" 
+                  type="button" 
+                  data-about-close
+              >
+                  <svg class="icon-close" width="14" height="14">
+                      <use href="./image/sprite-svg.svg#icon-close"></use>
+                  </svg>
+              </button>
+          </form> 
+      </div>
+
+>>>>>>> Stashed changes
       </div>
     </div>
   </div>

@@ -16,11 +16,34 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et
                     </p>
-                    <button class="products-button" tupe="button">
+                    <button 
+                        class="products-button" 
+                        type="button"
+                        data-product-cream-open
+                    >
                         <svg class="button__icon" width="11" height="10">
                             <use class="button__icon--svg" href="/src/image/sprite-svg.svg#arrow-right2"></use>
                         </svg>
                     </button>
+
+                        <!-- modal -->
+                        <div class="backdrop is-hidden" data-product>
+                            <form class="form js-speaker-form">
+
+                                <b class="form__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam quae sunt cumque asperiores illo quod optio, vitae non excepturi nihil tenetur eius impedit accusantium saepe quidem, iure possimus molestiae suscipit, ea minus? Sequi ipsam perferendis magni repellat aut quod?</b>
+
+                                <button 
+                                    class="form__btn--close" 
+                                    type="button" 
+                                    data-product-cream-close
+                                >
+                                    <svg class="icon-close" width="14" height="14">
+                                        <use href="./image/sprite-svg.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                            </form> 
+                        </div>
+
                 </div>
             </li>
 
@@ -37,11 +60,16 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et
                     </p>
-                    <button class="products-button" tupe="button" data-modal-open>
+                    <button 
+                        class="products-button" 
+                        type="button" 
+                        data-product-coffee-open
+                    >
                         <svg class="button__icon" width="11" height="10">
                             <use href="/src/image/sprite-svg.svg#arrow-right2"></use>
                         </svg>
                     </button>
+
 
                     <!-- modal -->
                     <div class="backdrop is-hidden" data-modal>
@@ -60,6 +88,28 @@
                         </form>
                     </div>
 
+
+                    
+                        <!-- modal -->
+                        <div 
+                            class="backdrop is-hidden" 
+                            data-modal
+                        >
+                            <form class="form js-speaker-form">
+                                <b class="form__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam quae sunt cumque asperiores illo quod optio, vitae non excepturi nihil tenetur eius impedit accusantium saepe quidem, iure possimus molestiae suscipit, ea minus? Sequi ipsam perferendis magni repellat aut quod?</b>
+                                <button 
+                                    class="form__btn--close" 
+                                    type="button" 
+                                    data-product-coffee-close
+                                >
+                                    <svg class="icon-close" width="14" height="14">
+                                        <use href="./image/sprite-svg.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                            </form> 
+                        </div>
+                        
+
                 </div>
             </li>
             <li class="porducts__item porducts__item--milkshakes">
@@ -75,11 +125,34 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                         eiusmod tempor incididunt ut labore et
                     </p>
-                    <button class="products-button" tupe="button">
+                    <button 
+                        class="products-button" 
+                        type="button"
+                        data-product-milkshake-open
+                    >
                         <svg class="button__icon" width="11" height="10">
                             <use href="/src/image/sprite-svg.svg#arrow-right2"></use>
                         </svg>
                     </button>
+
+                    <!-- modal -->
+                    <div 
+                        class="backdrop is-hidden" 
+                        data-product-milkshake
+                    >
+                    <form class="form js-speaker-form">
+                        <b class="form__descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis ipsam quae sunt cumque asperiores illo quod optio, vitae non excepturi nihil tenetur eius impedit accusantium saepe quidem, iure possimus molestiae suscipit, ea minus? Sequi ipsam perferendis magni repellat aut quod?</b>
+                        <button 
+                            class="form__btn--close" 
+                            type="button" 
+                            data-product-milkshake-close
+                        >
+                            <svg class="icon-close" width="14" height="14">
+                                <use href="./image/sprite-svg.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                    </form> 
+                </div>
                 </div>
             </li>
         </ul>
