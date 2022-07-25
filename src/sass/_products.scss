@@ -1,3 +1,11 @@
+.products {
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 64px;
+    }
+}
+
 .porducts__strong {
     display: block;
     font-family: 'Titan One';
@@ -102,11 +110,11 @@
             
         }
         
-                    @media screen and (min-width: 1200px) {
-                        width: 368px;
-                        height: 394px;
-                        top: -260px;
-                    }
+            @media screen and (min-width: 1200px) {
+                width: 368px;
+                height: 394px;
+                top: -260px;
+            }
 }
 
 .porducts__item--cofe::before {
