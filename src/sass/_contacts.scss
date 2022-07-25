@@ -183,10 +183,28 @@ line-height: calc(26/14);
         flex-direction: row;
         justify-content: center;
     }
+
+    .btn__primary {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        height: 44px;
+        padding: 0 30px;
+        &::after {
+            content: "";
+            background-image: url("../image/arrowRightWhite.svg");
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0 0 0 19px;
+        }
+    }
 }
 
 .contacts__button{
-    margin-bottom: 10px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,7 +213,6 @@ line-height: calc(26/14);
     background-color: $bg-button;
     border-radius: 22px;
     border: 1px transparent;
-    cursor: pointer;
     padding: auto 17px;
             font-style: normal;
             font-weight: 700;
