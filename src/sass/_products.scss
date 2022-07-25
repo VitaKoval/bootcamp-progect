@@ -53,12 +53,12 @@
 .porducts__list {
     @media screen and (min-width: 768px) {
         display: flex;
-        margin: -8px;
+        margin:  158px -8px 0;
     }
 
     @media screen and (min-width: 1200px){
         
-        margin: -16px;
+        margin: 265px -16px 0;
     }
 }
 
@@ -68,10 +68,12 @@
     margin-right: auto;
 
     width: 280px;
+    margin-top: 140px;
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 48px)/3);
         margin: 8px;
+        
     }
 
     @media screen and (min-width: 1200px) {
@@ -80,25 +82,108 @@
     }
 }
 
+.porducts__item--cream::before {
+    content: "";
+    background-image: url(../image/mobile/mobile-ice-pink.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
-
-.porducts__image {
     margin-bottom: -50%;
+    width: 280px;
+    height: 280px;
+    display: block;
+    position: absolute;
+        top: -140px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: -86px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 100%;
-        margin-bottom: -133px;
-
-    }
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            height: 224px;
+            
+        }
+        
+                    @media screen and (min-width: 1200px) {
+                        width: 368px;
+                        height: 394px;
+                        top: -260px;
+                    }
 }
+
+.porducts__item--cofe::before {
+    content: "";
+    background-image: url(../image/mobile/mobile-coffee.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        margin-bottom: -50%;
+        width: 280px;
+        height: 280px;
+        display: block;
+            position: absolute;
+                top: -140px;
+
+                @media screen and (min-width: 768px) {
+                    width: 224px;
+                    height: 224px;
+                    
+                }
+                
+                @media screen and (min-width: 1200px) {
+                width: 368px;
+                    height: 394px;
+                    top: -260px;;
+                
+                            }
+}
+
+.porducts__item--milkshakes::before {
+    content: "";
+    background-image: url(../image/mobile/mobile-milkshakes.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        margin-bottom: -50%;
+        width: 280px;
+        height: 280px;
+        display: block;
+        position: absolute;
+            top: -140px;
+
+            @media screen and (min-width: 768px) {
+                width: 224px;
+                    height: 224px;
+                            margin-bottom: -86px;
+                        }
+            
+                        @media screen and (min-width: 1200px) {
+                            width: 368px;
+                                height: 394px;
+                                top: -260px;
+            
+                        }
+}
+
+
+
+// .porducts__image {
+//     margin-bottom: -50%;
+
+//     @media screen and (min-width: 768px) {
+//         margin-bottom: -86px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         width: 100%;
+//         margin-bottom: -133px;
+
+//     }
+// }
 
 .porducts-box {
     display: block;
-    padding: 140px 0 32px 0;
+    padding: 140px 0 40px 0;
 
     border-radius: 24px;
 
@@ -145,10 +230,17 @@
     }
         
 }
-.porducts-box__icon {
+
+.porducts-box__title::after {
+    content: "";
+    background-image: url(../image/tri-tochki.svg);
+    background-position: center;
     display: flex;
     margin: 32px auto;
+    width: 26px;
+    height: 6px;
 }
+
 
 
 .products-box__text {
@@ -181,7 +273,7 @@
 .products-button{
     display: flex;
     background: $text-white;
-    margin: 0 auto;
+    margin: 32px auto 0;
 
     width: 40px;
     height: 40px;
