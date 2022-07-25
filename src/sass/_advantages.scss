@@ -45,10 +45,18 @@
   }
 }
 
-.advantages__block {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  }
-}
+// .advantages__block {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   }
+// }
+
+// .advantages__block--bucket::before {
+//   content: "";
+//   background-image: url(../image/bucket.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
 
 .advantages__svg {
   width: 50px;
@@ -70,7 +78,7 @@
   width: 100%;
 }
 
-.advantages__subtitle::before {
+.advantages__subtitle--bucket::before {
   content: '';
   background-image: url(../image/bucket.png);
   background-repeat: no-repeat;
@@ -80,6 +88,54 @@
   height: 50px;
   display: block;
   margin-bottom: 40px;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image:
+        url(../image/bucket2x.png);
+    }
+}
+
+.advantages__subtitle--apple::before {
+  content: '';
+  background-image: url(../image/apple.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-bottom: 40px;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image:
+        url(../image/appple2x.png);
+    }
+}
+
+.advantages__subtitle--heart::before {
+  content: '';
+    background-image: url(../image/heart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 44px;
+    height: 50px;
+    display: block;
+    margin-bottom: 40px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image:
+          url(../image/heart2x.png);
+      }
 }
 
 .advantages__subtitle {
