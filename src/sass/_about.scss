@@ -1,6 +1,87 @@
 .about {
   padding-top: 60px;
-  background: $bg-about;
+  background-color: $bg-about;
+
+  // min-width: 280px;
+  height: 100%;
+
+
+  background-image: url('../image/mobile/mobile-splash.png');
+  background-repeat: no-repeat;
+  background-position: right 0 top 594px;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../image/mobile/mobile-splash2x.png');
+  }
+
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+       display: none;
+     }
+
+  @media screen and (min-width: 1200px) {
+  // min-width: 1200px;
+  height: 100%;
+
+  background-image: url('../image/desctop/splash.png');
+  background-repeat: no-repeat;
+  background-position: right 0 top 236px;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../image/desctop/splash2x.png');
+    }
+  }
+  
+}
+
+.about.about__overlay {
+  // position: absolute;
+  top: 77px;
+  left: 0;
+
+  // width: 280px;
+  // height: 133px;
+
+  // background-image: url('../image/mobile/mobile-splash.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+
+  // @media (min-device-pixel-ratio: 2),
+  // (-webkit-min-device-pixel-ratio: 2),
+  // (min-resolution: 192dpi),
+  // (min-resolution: 2dppx) {
+  //   background-image: url('../image/mobile/mobile-splash2x.png');
+  // }
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   display: none;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   top: 0;
+  //   min-width: 1200px;
+  //   height: 521px;
+
+  //   background-image: url('../image/desctop/splash.png');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+
+  //   @media (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //     background-image: url('../image/desctop/splash2x.png');
+  //   }
+  // }
 }
 
 .about__subtitle {
@@ -54,29 +135,11 @@
 }
 
 .about__box {
+  // position: relative;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-  }
-
-  @media screen and (min-width: 1200px) {
-    position: relative;
-
-    // max-width: 1200px;
-    // width: 280px;
-    // height: 133px;
-
-    //   background-image: url('../image/desctop/splash.png');
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   background-size: 1200px;
-
-    //   @media (min-device-pixel-ratio: 2),
-    //     (-webkit-min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //     background-image: url('../image/desctop/splash2x.png');
-    //   }
   }
 }
 
@@ -105,15 +168,10 @@
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 1200px) {
-    // width: 501px;
-    // height: 501px;
-    // margin-left: 16px;
-  }
 }
 
 .about__fon {
-  position: relative;
+  // position: relative;
   width: 220px;
 
   @media screen and (min-width: 768px) {
@@ -121,7 +179,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    position: static;
+    // position: static;
     width: 463px;
   }
 }
@@ -156,48 +214,9 @@
   }
 }
 
-.about__overlay {
-  position: absolute;
-  top: 77px;
-  left: 0;
 
-  // max-width: 1200px;
-  width: 280px;
-  height: 133px;
 
-  background-image: url('../image/mobile/mobile-splash.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../image/mobile/mobile-splash2x.png');
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 0;
-    width: 1200px;
-    height: 521px;
-
-    background-image: url('../image/desctop/splash.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../image/desctop/splash2x.png');
-    }
-  }
-}
+  
 .about__subtext {
   width: 220px;
   font-weight: 500;
