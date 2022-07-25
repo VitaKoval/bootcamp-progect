@@ -2,7 +2,7 @@
   padding-top: 60px;
   background-color: $bg-about;
 
-  // min-width: 280px;
+  min-width: 280px;
   height: 100%;
 
 
@@ -23,7 +23,7 @@
      }
 
   @media screen and (min-width: 1200px) {
-  // min-width: 1200px;
+  min-width: 1200px;
   height: 100%;
 
   background-image: url('../image/desctop/splash.png');
