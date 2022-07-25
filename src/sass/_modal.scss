@@ -1,0 +1,36 @@
+.form {
+    position: relative;
+    max-width: 600px;
+    padding: 50px;
+    background-color: #e17992;
+
+    border-radius: 20px;
+    letter-spacing: 1.1;
+    line-height: 1.5;
+
+    &__descr {
+        color: #fff;
+    }
+
+    &__btn--close {
+        position: absolute;
+        z-index: 110;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        top: 8px;
+        right: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 50%;
+        background-color: transparent;
+        -webkit-transition:  250ms ease-in-out;
+        transition:  250ms ease-in-out;
+        
+        .icon-close {
+            fill: #fff;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
