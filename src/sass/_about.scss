@@ -5,6 +5,8 @@
   min-width: 280px;
   height: 100%;
 
+@media screen and (max-width: 767px) {
+  
 
   background-image: url('../image/mobile/mobile-splash.png');
   background-repeat: no-repeat;
@@ -17,10 +19,8 @@
   (min-resolution: 2dppx) {
     background-image: url('../image/mobile/mobile-splash2x.png');
   }
-
-     @media screen and (min-width: 768px) and (max-width: 1199px) {
-       display: none;
-     }
+}
+  
 
   @media screen and (min-width: 1200px) {
   min-width: 1200px;
@@ -38,7 +38,6 @@
       background-image: url('../image/desctop/splash2x.png');
     }
   }
-  
 }
 
 .about.about__overlay {
