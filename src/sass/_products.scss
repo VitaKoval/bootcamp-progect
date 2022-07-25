@@ -104,9 +104,28 @@
     position: absolute;
         top: -140px;
 
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../image/mobile/mobile-ice-pink2x.png);
+            }
+
         @media screen and (min-width: 768px) {
             width: 224px;
             height: 224px;
+            background-image: url(
+                ../image/tablet/tablet-ice-pink.png
+            );
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image:
+                        url(../image/tablet/tablet-ice-pink2x.png);
+                }
             
         }
         
@@ -114,6 +133,15 @@
                 width: 368px;
                 height: 394px;
                 top: -260px;
+                background-image: url(../image/desctop/ice-pink.png);
+
+                @media (min-device-pixel-ratio: 2),
+                    (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image:
+                            url(../image/desctop/ice-pink2x.png);
+                    }
             }
 }
 
@@ -131,18 +159,42 @@
             position: absolute;
                 top: -140px;
 
+                @media (min-device-pixel-ratio: 2),
+                    (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image:
+                            url(../image/mobile/mobile-coffee2x.png);
+                    }
+
                 @media screen and (min-width: 768px) {
                     width: 224px;
                     height: 224px;
+                    background-image: url(../image/tablet/tablet-coffee.png);
+                    @media (min-device-pixel-ratio: 2),
+                        (-webkit-min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image:
+                                url(../image/tablet/tablet-coffee2x.png);
+                        }
                     
                 }
                 
                 @media screen and (min-width: 1200px) {
                 width: 368px;
                     height: 394px;
-                    top: -260px;;
-                
-                            }
+                    top: -260px;
+                    background-image: url(../image/desctop/coffee.png);
+
+                    @media (min-device-pixel-ratio: 2),
+                        (-webkit-min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image:
+                                url(../image/desctop/blackgirl2x.png);
+                        }
+                }
 }
 
 .porducts__item--milkshakes::before {
@@ -159,17 +211,42 @@
         position: absolute;
             top: -140px;
 
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image:
+                        url(../image/mobile/mobile-milkshakes2x.png);
+                }
+
             @media screen and (min-width: 768px) {
                 width: 224px;
                     height: 224px;
                             margin-bottom: -86px;
+                            background-image: url(../image/tablet/tablet-milkshakes.png);
+
+                            @media (min-device-pixel-ratio: 2),
+                                (-webkit-min-device-pixel-ratio: 2),
+                                (min-resolution: 192dpi),
+                                (min-resolution: 2dppx) {
+                                    background-image:
+                                        url(../image/tablet/tablet-milkshakes2x.png);
+                                }
                         }
             
                         @media screen and (min-width: 1200px) {
                             width: 368px;
                                 height: 394px;
                                 top: -260px;
-            
+                                background-image: url(../image/desctop/milkshakes.png);
+
+                                @media (min-device-pixel-ratio: 2),
+                                    (-webkit-min-device-pixel-ratio: 2),
+                                    (min-resolution: 192dpi),
+                                    (min-resolution: 2dppx) {
+                                        background-image:
+                                            url(../image/desctop/milkshakes2x.png);
+                                    }
                         }
 }
 
