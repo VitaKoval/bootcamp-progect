@@ -675,6 +675,14 @@ body.modal-open {
   }
 }
 
+.hero__btn--wrapper .btn__primary a {
+  color: #fff;
+}
+
+.hero__btn--wrapper .btn__acent a {
+  color: #D41443;
+}
+
 .btn {
   padding: 0 12px;
   max-width: 200px;
@@ -905,12 +913,19 @@ body.modal-open {
 }
 
 .btn__margin {
-  margin: 0 auto 20px auto;
+  max-width: 209px;
+  margin: 30px auto 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn__white::after {
   content: "";
-  background-image: url("../image/arrowRight.png");
+  background-image: url("../image/arrowRight.svg");
   display: block;
   width: 10px;
   height: 10px;
@@ -922,7 +937,7 @@ body.modal-open {
 .menu__btn {
   z-index: 100;
   right: 20px;
-  margin: 0 22px 0 0;
+  margin: -10px 0 0 0;
   padding: 10px;
   border: none;
   background-color: transparent;
@@ -930,6 +945,12 @@ body.modal-open {
 
 .menu__btn.is-open {
   position: fixed;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    margin: -10px 0 20px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2104,8 +2125,31 @@ body.modal-open {
   }
 }
 
+.contacts__buttons .btn__primary {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+  padding: 0 30px;
+}
+
+.contacts__buttons .btn__primary::after {
+  content: "";
+  background-image: url("../image/arrowRightWhite.svg");
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 0 0 19px;
+}
+
 .contacts__button {
-  margin-bottom: 10px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2120,7 +2164,6 @@ body.modal-open {
   background-color: #d41342;
   border-radius: 22px;
   border: 1px transparent;
-  cursor: pointer;
   padding: auto 17px;
   font-style: normal;
   font-weight: 700;
