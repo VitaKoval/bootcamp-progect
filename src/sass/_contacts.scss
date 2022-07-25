@@ -247,14 +247,12 @@ line-height: calc(26/14);
         }
 }
 .contacts__znak-bolshe-white{
-    stroke: white;
-    width: 7px;
-    height: 10px;
+    stroke: $text-white;
+    fill: transparent;
     margin-left: 11px;
-    align-items: center;
-    text-align: center;
 }
 .contacts__znak-bolshe-rose{
+    fill: transparent;
     stroke: $bg-button;
     margin-left: 11px;
 }
