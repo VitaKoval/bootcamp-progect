@@ -48,8 +48,8 @@
                         <b class="form__descr">Оставьте свои данные, мы вам перезвоним</b>
 
                         <div class="form__field">
-                            <label class="form__label" for="name">Имя</label>
-                            <input class="form__input user-name" type="text" name="name" id="name">
+                            <label class="form__label" for="name2">Имя</label>
+                            <input class="form__input user-name" type="text" name="name" id="name2">
                             <div class="icon__form">
                                 <svg class="icon-input" width="13" height="13">
                                     <use href="./image/sprite-svg.svg#icon-userName"></use>
@@ -58,8 +58,8 @@
                         </div>
 
                         <div class="form__field">
-                            <label class="form__label" for="tel">Телефон</label>
-                            <input class="form__input" type="tel" name="tel" id="tel">
+                            <label class="form__label" for="tel2">Телефон</label>
+                            <input class="form__input" type="tel" name="tel" id="tel2">
                             <div class="icon__form">
                                 <svg class="icon-input" width="13" height="13">
                                     <use href="./image/sprite-svg.svg#icon-tel"></use>
@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="form__field">
-                            <label class="form__label" for="email">Почта</label>
+                            <label class="form__label" for="email2">Почта</label>
                             <input class="form__input" type="email" name="email" id="email">
                             <div class="icon__form">
                                 <svg class="icon-input" width="13" height="13">
@@ -79,15 +79,15 @@
 
                         
                         <div class="form__field comment">
-                            <label class="form__label" for="comment">Комментарий</label>
-                            <textarea class="form__textarea" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                            <label class="form__label" for="comment2">Комментарий</label>
+                            <textarea class="form__textarea" name="comment" id="comment2" rows="10" placeholder="Введите текст"></textarea>
                         </div>
                         
                         <!-- checkbox -->
                         <div class="checkbox form__field ">
                             
-                            <label class="agreement form__label" for="agreement" >
-                                <input class="checkbox__check" type="checkbox" name="agreement" id="agreement">
+                            <label class="agreement form__label" for="agreement2" >
+                                <input class="checkbox__check" type="checkbox" name="agreement" id="agreement2">
                                 <span class="checkbox__span"></span>
                                 
                                 Соглашаюсь с рассылкой и принимаю 
@@ -115,87 +115,79 @@
                 id="menu-container"
                 data-menu
             >
-                <ul class="nav nav__list--menu list">
-                        <button 
-                            class="btn btn__white 
-                            btn__margin btn--hover" 
-                            type="button"
-                            data-modal-mob-open=""
-                        >
-                            Buy now
-                        </button>
+                    <button class="btn btn__white btn__margin btn--hover" type="button" data-modal-mob-open>
+                        Buy now
+                    </button>
 
-                        <!-- modal mob menu -->
-                        <div 
-                            class="backdrop is-hidden" 
-                            data-modal-mob
-                        >
-                            <form class="form js-speaker-form">
-        
-                                <b class="form__descr">Оставьте свои данные, мы вам перезвоним</b>
-        
-                                <div class="form__field">
-                                    <label class="form__label" for="name">Имя</label>
-                                    <input class="form__input user-name" type="text" name="name" id="name">
-                                    <div class="icon__form">
-                                        <svg class="icon-input" width="13" height="13">
-                                            <use href="./image/sprite-svg.svg#icon-userName"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-        
-                                <div class="form__field">
-                                    <label class="form__label" for="tel">Телефон</label>
-                                    <input class="form__input" type="tel" name="tel" id="tel">
-                                    <div class="icon__form">
-                                        <svg class="icon-input" width="13" height="13">
-                                            <use href="./image/sprite-svg.svg#icon-tel"></use>
-                                        </svg>
-                                    </div> 
-                                </div>
-        
-                                <div class="form__field">
-                                    <label class="form__label" for="email">Почта</label>
-                                    <input class="form__input" type="email" name="email" id="email">
-                                    <div class="icon__form">
-                                        <svg class="icon-input" width="13" height="13">
-                                            <use href="./image/sprite-svg.svg#icon-mail2"></use>
-                                        </svg>
-                                    </div>  
-                                </div>
-                                
-                                <div class="form__field comment">
-                                    <label class="form__label" for="comment">Комментарий</label>
-                                    <textarea class="form__textarea" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
-                                </div>
-                                
-                                <!-- checkbox -->
-                                <div class="checkbox form__field ">
-                                    <input class="checkbox__check" type="checkbox" name="agreement" id="agreement">
-                                    <span class="checkbox__span"></span>
-                                    
-                                    <label class="agreement form__label" for="agreement" >
-                                        Соглашаюсь с рассылкой и принимаю 
-                                        <a class="agreement-terms" href="#">Условия договора</a>
-                                    </label>
-                                </div>
-        
-                                <!-- form -->
-                                <div class="form__field">
-                                    <button class="form__submit btn btn__white" type="submit">Отправить</button>
-                                </div>
-        
-                                <button 
-                                    class="form__btn--close" 
-                                    type="button" 
-                                    data-modal-mob-close
-                                >
-                                    <svg class="icon-close" width="10" height="10">
-                                        <use href="./image/sprite-svg.svg#icon-close"></use>
+                    <!-- modal mob menu -->
+                    <div class="backdrop is-hidden" data-modal-mob>
+                        <form class="form js-speaker-form">
+
+                            <b class="form__descr">Оставьте свои данные, мы вам перезвоним</b>
+
+                            <div class="form__field">
+                                <label class="form__label" for="name">Имя</label>
+                                <input class="form__input user-name" type="text" name="name" id="name">
+                                <div class="icon__form">
+                                    <svg class="icon-input" width="13" height="13">
+                                        <use href="./image/sprite-svg.svg#icon-userName"></use>
                                     </svg>
-                                </button>
-                            </form> 
-                        </div>
+                                </div>
+                            </div>
+
+                            <div class="form__field">
+                                <label class="form__label" for="tel">Телефон</label>
+                                <input class="form__input" type="tel" name="tel" id="tel">
+                                <div class="icon__form">
+                                    <svg class="icon-input" width="13" height="13">
+                                        <use href="./image/sprite-svg.svg#icon-tel"></use>
+                                    </svg>
+                                </div> 
+                            </div>
+
+                            <div class="form__field">
+                                <label class="form__label" for="email">Почта</label>
+                                <input class="form__input" type="email" name="email" id="email">
+                                <div class="icon__form">
+                                    <svg class="icon-input" width="13" height="13">
+                                        <use href="./image/sprite-svg.svg#icon-mail2"></use>
+                                    </svg>
+                                </div>  
+                            </div>
+                            
+                            <div class="form__field comment">
+                                <label class="form__label" for="comment">Комментарий</label>
+                                <textarea class="form__textarea" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                            </div>
+                            
+                            <!-- checkbox -->
+                            <div class="checkbox form__field ">
+                                <input class="checkbox__check" type="checkbox" name="agreement" id="agreement">
+                                <span class="checkbox__span"></span>
+                                
+                                <label class="agreement form__label" for="agreement" >
+                                    Соглашаюсь с рассылкой и принимаю 
+                                    <a class="agreement-terms" href="#">Условия договора</a>
+                                </label>
+                            </div>
+
+                            <!-- form -->
+                            <div class="form__field">
+                                <button class="form__submit btn btn__white" type="submit">Отправить</button>
+                            </div>
+
+                            <button 
+                                class="form__btn--close" 
+                                type="button" 
+                                data-modal-mob-close
+                            >
+                                <svg class="icon-close" width="10" height="10">
+                                    <use href="./image/sprite-svg.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                        </form> 
+                    </div>
+                <ul class="nav nav__list--menu list">
 
                     <li class="nav__item link">
                         <a class="nav__link active" href="#header" aria-label="Home page link">Home</a> 
