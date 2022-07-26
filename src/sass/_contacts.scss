@@ -176,83 +176,103 @@ line-height: calc(26/14);
     flex-direction: column;
     align-items: center;
     margin-top: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @media screen and (min-width: 768px) {
         margin-top: 60px;
         flex-direction: row;
         justify-content: center;
     }
 
-    .btn__primary {
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        height: 44px;
-        padding: 0 30px;
-        &::after {
-            content: "";
-            background-image: url("../image/arrowRightWhite.svg");
-            display: block;
-            width: 10px;
-            height: 10px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            margin: 0 0 0 19px;
+    // .btn__primary {
+    //     font-weight: 700;
+    //     display: flex;
+    //     align-items: center;
+    //     height: 44px;
+    //     padding: 0 30px;
+    //     &::after {
+    //         content: "";
+    //         background-image: url("../image/arrowRightWhite.svg");
+    //         display: block;
+    //         width: 10px;
+    //         height: 10px;
+    //         background-size: contain;
+    //         background-repeat: no-repeat;
+    //         margin: 0 0 0 19px;
+    //     }
+    // }
+}
+
+.contacts__btn{
+    width: 161.45px;
+    height: 44px;
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: calc(21/16);
+letter-spacing: 0.02em;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+background-color: $text-primary;
+border-radius: 22px;
+border: 1px transparent;
+padding: auto 17px;
+margin-bottom: 10px;
+color: $text-white;
+&::after {
+    content: "";
+    background-image: url("../image/arrowRightWhite.svg");
+    display: block;
+    width: 8px;
+    height: 12px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: auto 0 auto 10px;
+}
+
+&:hover,
+&:focus{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+@media screen and (min-width: 768px) {
+    width: 191.45px;
+    &:not(:last-child){
+        margin-right: 14.5px;
+    }
+    }
+@media screen and (min-width: 1200px) {
+    width: 198px;
+    &:not(:last-child){
+        margin-right: 12px;
         }
     }
 }
 
-.contacts__button{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 161.45px;
-    height: 44px;
-    background-color: $bg-button;
-    border-radius: 22px;
-    border: 1px transparent;
-    padding: auto 17px;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: calc(21/16);
-
-            text-align: center;
-            color: $text-white;
-    &:hover,
-    &:focus{
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.contacts__button-light{
+    background-color: $text-white;
+    color: $text-primary;
+    &::after {
+        content: "";
+        background-image: url("../image/arrowRight.svg");
+        display: block;
+        width: 8px;
+        height: 12px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin: auto 0 auto 10px;
         }
-    @media screen and (min-width: 768px) {
-        width: 191.45px;
-        &:not(:last-child){
-            margin-right: 14.5px;
-        }
-        }
-    @media screen and (min-width: 1200px) {
-        width: 198px;
-        &:not(:last-child){
-            margin-right: 12px;
-        }
-        }
-
-    &--light{
-        background-color: $text-white;
-        color:$text-primary;
-        &:hover,
-        &:focus{
-            background: #ECEBEB;
-            }
-
-        }
-}
-.contacts__znak-bolshe-white{
-    stroke: $text-white;
-    fill: transparent;
-    margin-left: 11px;
-}
-.contacts__znak-bolshe-rose{
-    fill: transparent;
-    stroke: $bg-button;
-    margin-left: 11px;
+&:hover,
+&:focus{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 }
